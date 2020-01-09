@@ -15,6 +15,7 @@ $(document).ready(function(){
 
     // Intercetto il click sul pulsante mese precedente
     $('#mese_precedente').click(function() {
+        // Creo il mese corrente e stampo le festività solo se il mese attuale visualizato è diverso da Gennaio
         if ($('#mese-corrente').text() != 'Gennaio') {
             // Aggiungo un mese alla data da visualizzare
             moment_iniziale.subtract(1, 'months');
@@ -27,6 +28,7 @@ $(document).ready(function(){
 
     // Intercetto il click sul pulsante mese successivo
     $('#mese_successivo').click(function() {
+        // Creo il mese corrente e stampo le festività solo se il mese attuale visualizzato è diverso da Dicembre
         if ($('#mese-corrente').text() != 'Dicembre') {
             // Aggiungo un mese alla data da visualizzare
             moment_iniziale.add(1, 'months');
