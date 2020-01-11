@@ -27,14 +27,57 @@ header h1 {
     border: 0;
 }
 
-main {
-    width: 200px;
-    margin: 0 auto;
-}
-#calendario li {
-    margin: 10px 0;
+.navigazione-mesi button:disabled {
+    background-color: lightgrey;
 }
 
-#calendario li.festa {
+.fa-arrow-right {
+    padding-left: 20px;
+}
+
+.fa-arrow-left {
+    padding-right: 20px;
+}
+
+.grid-container div.festa {
     color: red;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+
+.day {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 20px;
+}
+
+.holiday {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 20px;
+}
+
+.no-data {
+    color:rgba(0, 0, 0, 0);
+}
+
+.nascosto {
+    display: none;
 }

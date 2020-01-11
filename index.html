@@ -9,6 +9,8 @@
         <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <script src="https://momentjs.com/downloads/moment.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js" charset="utf-8"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -19,14 +21,13 @@
                 <button id="mese_successivo">Successivo<i class="fas fa-arrow-right"></i></button>
             </div>
         </header>
-        <main>
-            <ul id="calendario">
 
-            </ul>
-        </main>
+        <div class="grid-container">
+
+        </div>
 
         <script id="giorno-template" type="text/x-handlebars-template">
-            <li data-giorno="{{data_giorno}}">{{day}}</li>
+            <div data-giorno="{{data_giorno}}"><span class="day">{{day}}</span></div>
         </script>
 
     </body>
